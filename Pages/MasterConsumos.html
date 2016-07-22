@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Master Consumos</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Estilos -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl-carousel/owl.carousel.css">
+	<!-- Scripts -->
+	<script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../css/bxslider/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../css/owl-carousel/owl.carousel.js"></script>
+	<!-- bxslider -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+		  	controls:false,	
+		  	auto: true
+		  });		  
+		});
+		$(document).ready(function() { 
+		   var altura = $('#navegacion-js').offset().top;
+			$(window).on('scroll', function(){
+			if ( $(window).scrollTop() > altura )
+				{
+					$('#navegacion-js').addClass('navbar-fixed-top');
+				} 
+			else 
+				{
+				$('#navegacion-js').removeClass('navbar-fixed-top');
+				}
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<!-- Navigation -->
+		<nav class="inner navbar navbar-inverse navbar-fixed-top animate" id="navegacion-js">
+			<img class="tagline" src="../images/home/top-line.jpg">
+	  		<div class="container-fluid">
+	    		<div class="navbar-header">
+	   				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        			<span class="icon-bar"></span>
+	        			<span class="icon-bar"></span>
+	        			<span class="icon-bar"></span> 
+	      			</button>
+	      			<a class="navbar-brand" href="#">
+	        			<img alt="Brand" src="../images/logo-extranet.png"/>
+	      			</a>      			
+	    		</div>
+	    		<div class="collapse navbar-collapse" id="myNavbar">
+	    			<ul class="nav navbar-nav navbar-left">
+	      				<li><a href="#">|Extranet de información comercial|</a></li>
+	      			</ul>
+	    			<ul class="nav navbar-nav navbar-right">
+	      				<li><a> Lima 20 de Julio 2016</a></li>
+					    <li><a href="#"><img alt="Brand" src="../images/home/noticias.png"/> Noticias</a></li>
+					    <li><a href="#"><img alt="Brand" src="../images/home/mensaje.png"/> Mensajes</a></li>
+					    <li><a href="#"><img alt="Brand" src="../images/home/admin.png"/> Administración</a></li>
+					    <li><a href="#"> Juan Perez</a></li>
+	    			</ul>
+	   			</div>
+	  		</div>
+		</nav>
+	</header>
+	<!-- Body -->
+	<div class="inner">
+		
+	</div>
+	<!-- Footer -->
+	<footer class="inner site-footer">
+		<div id="footer">
+	      <div class="container">
+	        <p style="text-align: center;">Contáctenos: cliente.engie@pe.engie.com
+	        	@2016 | Engie. Todos los derechos reservados
+	        	<img src="../images/home/certificados.png" alt="certificados" border="0" />
+	        </p>
+	      </div>
+    	</div>
+	</footer>
+</body>
+</html>
